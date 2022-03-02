@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class PassiveLottoFactory implements LottoFactory{
 
-    List<Lotto> lottos;
+    private List<Lotto> lottos;
 
     public PassiveLottoFactory(List<List<LottoNumber>> passiveLottoNumbers) {
         this.lottos = new ArrayList<>(toLotto(passiveLottoNumbers));

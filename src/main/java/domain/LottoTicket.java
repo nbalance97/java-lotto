@@ -9,8 +9,8 @@ public class LottoTicket {
 
     private final List<Lotto> lottos;
     private int autoLottoCount;
-    LottoFactory autoLottoFactory;
-    LottoFactory passiveLottoFactory;
+    private LottoFactory autoLottoFactory;
+    private LottoFactory passiveLottoFactory;
 
     public LottoTicket(int autoLottoCount, List<List<LottoNumber>> passiveLottos, LottoNumberGenerator generatorPolicy) {
         this.autoLottoCount = autoLottoCount;

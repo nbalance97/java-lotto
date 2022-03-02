@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AutoLottoFactory implements LottoFactory {
-    List<Lotto> lottos;
+    private List<Lotto> lottos;
 
     public AutoLottoFactory(LottoNumberGenerator generator, int generateCount) {
         this.lottos = new ArrayList<>();
