@@ -14,7 +14,7 @@ public class PassiveLottoFactory implements LottoFactory{
 
     private List<Lotto> toLotto(List<List<LottoNumber>> passiveLottoNumbers) {
         return passiveLottoNumbers.stream()
-                .map(LottoNumbers -> new Lotto(LottoNumbers))
+                .map(Lotto :: new)
                 .collect(Collectors.toList());
     }
 
